@@ -16,21 +16,12 @@
     <!-- Open Graph dla mediów społecznościowych -->
     <meta property="og:title" content="Love Hibo - Sklep z książkami dla dzieci">
     <meta property="og:description" content="Odkryj książki, które wypełnią serce miłością, szczęściem i radością">
-    <meta property="og:image" content="https://lovehibo.com/logos/PINGUINO LOVE HIBO.jpg">
-    <meta property="og:url" content="https://lovehibo.com/polaco.html">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Love Hibo - Sklep z książkami dla dzieci">
-    <meta name="twitter:description" content="Odkryj książki, które wypełnią serce miłością, szczęściem i radością">
-    <meta name="twitter:image" content="https://lovehibo.com/logos/PINGUINO LOVE HIBO.jpg">
-    <meta name="twitter:site" content="@lovehibo">
-    <meta name="twitter:creator" content="@lovehibo">    <link rel="canonical" href="https://lovehibo.com/polaco.html">
+    <meta property="og:image" content="/logos/PINGUINO LOVE HIBO.jpg">
+    <meta property="og:url" content="https://lovehibo.com">    <link rel="canonical" href="https://lovehibo.com/polaco.html">
     
     <!-- Hreflang tags for multilingual SEO -->
     <link rel="alternate" hreflang="en" href="https://lovehibo.com/index.html">
-    <link rel="alternate" hreflang="es" href="https://lovehibo.com/español.html">
+    <link rel="alternate" hreflang="es" href="https://lovehibo.com/espanol.html">
     <link rel="alternate" hreflang="fr" href="https://lovehibo.com/frances.html">
     <link rel="alternate" hreflang="de" href="https://lovehibo.com/aleman.html">
     <link rel="alternate" hreflang="it" href="https://lovehibo.com/italiano.html">
@@ -54,14 +45,12 @@
     <link rel="preload" href="libros_polaco/3.jpg" as="image">
 <link rel="preload" href="css/style.min.css" as="style">
     
-    <!-- Preconnect para recursos externos -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    
     <!-- Arkusze stylów -->
-    <link rel="stylesheet" href="css/style.min.css?v=2.0">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
     
     <!-- Czcionki -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,7 +58,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Bungee&family=Lilita+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
     
     <!-- Skrypt z atrybutem defer dla lepszej wydajności -->
-    <script src="css/script.min.js" defer></script>    
+    <script src="css/main.js" defer></script>    
     <!-- JSON-LD Structured Data para SEO -->
     <script type="application/ld+json">
     {
@@ -115,8 +104,9 @@
         <div class="dropdown">
             <button class="dropdown-btn idioma" aria-label="Wybierz język" aria-haspopup="true" aria-expanded="false">Język</button>
             <div class="dropdown-content">
-                <a href="español.html" class="dropdown-item">Hiszpański</a>
-                <a href="index.html" class="dropdown-item">Angielski</a>
+                <a href="espanol.html" class="dropdown-item">Hiszpański</a>
+                <a href="index.html" class="dropdown-item">Angielski (USA)</a>
+                <a href="english.html" class="dropdown-item">Angielski (UK)</a>
                 <a href="frances.html" class="dropdown-item">Francuski</a>
                 <a href="aleman.html" class="dropdown-item">Niemiecki</a>
                 <a href="italiano.html" class="dropdown-item">Włoski</a>
@@ -129,11 +119,11 @@
             <button class="dropdown-btn categoria" aria-haspopup="true" aria-expanded="false">Kategorie ▼</button>
             <div class="dropdown-content">
                 <a href="#" class="dropdown-item" data-category="all" onclick="filterByCategory('all'); return false;">Wszystkie książki</a>
-                <a href="#" class="dropdown-item" data-category="coloring" onclick="filterByCategory('coloring'); return false;">Kolorowanki</a>
-                <a href="#" class="dropdown-item" data-category="stories" onclick="filterByCategory('stories'); return false;">Bajki dla dzieci</a>
-                <a href="#" class="dropdown-item" data-category="witches" onclick="filterByCategory('witches'); return false;">Seria latających czarownic</a>
-                <a href="#" class="dropdown-item" data-category="animals" onclick="filterByCategory('animals'); return false;">Urocze zwierzęta</a>
-                <a href="#" class="dropdown-item" data-category="fantasy" onclick="filterByCategory('fantasy'); return false;">Fantazja i magia</a>
+                <a href="#" class="dropdown-item" data-category="coloring" onclick="filterByCategory('coloring'); return false;">Książki do kolorowania</a>
+                <a href="#" class="dropdown-item" data-category="stories" onclick="filterByCategory('stories'); return false;">Historie dla dzieci</a>
+                <a href="#" class="dropdown-item" data-category="witches" onclick="filterByCategory('witches'); return false;">Seria Latające Czarownice</a>
+                <a href="#" class="dropdown-item" data-category="animals" onclick="filterByCategory('animals'); return false;">Słodkie Zwierzęta</a>
+                <a href="#" class="dropdown-item" data-category="fantasy" onclick="filterByCategory('fantasy'); return false;">Fantazja i Magia</a>
             </div>
         </div>
     </div>
@@ -148,16 +138,18 @@
 
 <main class="main-content" id="main-content" role="main">
     <section class="library-section" aria-label="Kolekcja książek">
-        <div class="library-header">
-            <h2 class="page-title w3-jumbo">BIBLIOTEKA ONLINE</h2>
-            <p class="book-count"><i class="fas fa-book"></i> <span id="bookCount">9</span> książek</p>
-        </div>
+        <h2 class="page-title w3-jumbo">BIBLIOTEKA ONLINE</h2>
         
+        <!-- Encabezado de biblioteca con contador -->
+        <div class="library-header">
+            <h3>Nasza kolekcja: <span id="bookCount">9</span> książek dostępnych</h3>
+        </div>
+
         <!-- Filtros de búsqueda -->
-        <div class="search-filters" role="search" aria-label="Wyszukiwanie i filtry książek">
+        <div class="search-filters">
             <div class="search-box">
-                <i class="fas fa-search" aria-hidden="true"></i>
-                <input type="search" id="searchInput" placeholder="Wyszukaj książki po tytule..." aria-label="Wyszukaj książki po tytule">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Szukaj książek po tytule..." aria-label="Szukaj książek po tytule">
             </div>
             <div class="filter-group">
                 <label for="ageFilter">Wiek:</label>
@@ -180,8 +172,7 @@
         </div>
 
         <div class="book-grid">
-            <!-- Książka 1 -->
-            <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="kolorowanka uroczy miś beary">
+              <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="kolorowanka uroczy miś beary">
                 <div class="book-rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -196,8 +187,6 @@
                     <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                     Zobacz na Amazon PL</a>
             </div>
-
-            <!-- Książka 2 -->
             <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="kolorowanka uroczy miś bibi">
                 <div class="book-rating">
                     <i class="fas fa-star"></i>
@@ -213,8 +202,6 @@
                     <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                     Zobacz na Amazon PL</a>
             </div>
-
-            <!-- Książka 3 -->
             <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="kolorowanka uroczy kotek catty">
                 <div class="book-rating">
                     <i class="fas fa-star"></i>
@@ -230,8 +217,6 @@
                     <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                     Zobacz na Amazon PL</a>
             </div>
-
-            <!-- Książka 4 -->
             <div class="book-card" data-category="coloring fantasy animals" data-age="3-5" data-format="paperback" data-title="jednorożec uny">
                 <div class="book-rating">
                     <i class="fas fa-star"></i>
@@ -247,8 +232,6 @@
                     <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                     Zobacz na Amazon PL</a>
             </div>
-
-            <!-- Książka 5 -->
             <div class="book-card" data-category="coloring fantasy animals" data-age="3-5" data-format="paperback" data-title="słodka kolorowanka smok draggy">
                 <div class="book-rating">
                     <i class="fas fa-star"></i>
@@ -264,26 +247,15 @@
                     <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                     Zobacz na Amazon PL</a>
             </div>
-
-            <!-- Książka 6 -->
-            <div class="book-card" data-category="coloring animals" data-age="4-8" data-format="paperback" data-title="kolorowanka uroczy szczeniak doggy">
-                <div class="book-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <img src="libros_polaco/6.jpg" alt="KOLOROWANKA Z UROCZYM SZCZENIAKIEM DLA DZIECI 3–5 LAT LOVE HIBO DOGGY" class="book-image" loading="lazy">
+            <div class="book-card">
+                <img src="libros_polaco/6.jpg" alt="Kawaii kolorowanka z uroczym pieskiem Dzieci 4–8 & 8–12 LOVE HIBO DOGGY" class="book-image" loading="lazy">
                 <p class="w3-center">Autor: L<span class="header-heart">❤</span>VE HIBO</p>
                 <p>Miękka oprawa – Duży druk</p>
                 <a aria-label="Zobacz tę książkę na Amazon" href="https://www.amazon.pl/dp/B0F31TWL26" class="buy-button" target="_blank" rel="noopener">
                     <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                     Zobacz na Amazon PL</a>
             </div>
-
-            <!-- Książka 7 -->
-            <div class="book-card" data-category="coloring animals" data-age="4-8" data-format="paperback" data-title="wielkanocny zajączek bunny">
+            <div class="book-card" data-category="coloring animals" data-age="4-8" data-format="paperback" data-title="kolorowanka wielkanocny zajączek bunny">
                 <div class="book-rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -291,15 +263,13 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <img src="libros_polaco/7.jpg" alt="KOLOROWANKA WIELKANOCNY ZAJĄCZEK LOVE HIBO BUNNY" class="book-image" loading="lazy">
+                <img src="libros_polaco/7.jpg" alt="KOLOROWANKA WIELKANOCNY ZAJĄCZEK DLA DZIECI 4–8 I 8–12 LAT LOVE HIBO BUNNY" class="book-image" loading="lazy">
                 <p class="w3-center">Autor: L<span class="header-heart">❤</span>VE HIBO</p>
                 <p>Miękka oprawa – Duży druk</p>
                 <a aria-label="Zobacz tę książkę na Amazon" href="https://www.amazon.pl/dp/B0F2HJZ2NB" class="buy-button" target="_blank" rel="noopener">
                     <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                     Zobacz na Amazon PL</a>
             </div>
-
-            <!-- Książka 8 -->
             <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="kolorowanka pingwinka dziewczynek">
                 <div class="book-rating">
                     <i class="fas fa-star"></i>
@@ -315,8 +285,6 @@
                     <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                     Zobacz na Amazon PL</a>
             </div>
-
-            <!-- Książka 9 -->
             <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="kolorowanka pingwinek chłopców penguin">
                 <div class="book-rating">
                     <i class="fas fa-star"></i>
@@ -332,6 +300,10 @@
                     <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                     Zobacz na Amazon PL</a>
             </div>
+        
+        
+       
+       
         </div>
     </section>
 
@@ -358,16 +330,9 @@
 
 <footer class="site-footer w3-padding-16 w3-center" role="contentinfo">
     <p>
-        L<span class="header-heart">❤</span>VE HIBO - Odkryj książkę, która rozświetli twoje serce i wybierz tę, która najbardziej cię przytuli
+        L<span class="header-heart">❤</span>VE HIBO - Odkryj książkę, która rozświetli twoje serce i wybierz tę</span> która najbardziej cię przytuli
         <span class="header-heart">❤</span> &copy; 2025
     </p>
-    <div style="margin:1rem 0;">
-        <a href="privacy.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Prywatność</a> |
-        <a href="terms.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Warunki</a> |
-        <a href="cookies.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Ciasteczka</a> |
-        <a href="legal.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Informacje prawne</a> |
-        <a href="contact.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Kontakt</a>
-    </div>
     <div>
         <a href="https://facebook.com" aria-label="Facebook" style="color:#fff;margin:0 8px;"><i class="fab fa-facebook"></i></a>
         <a href="https://instagram.com" aria-label="Instagram" style="color:#fff;margin:0 8px;"><i class="fab fa-instagram"></i></a>

@@ -16,17 +16,8 @@
     <!-- Open Graph para redes sociais -->
     <meta property="og:title" content="Love Hibo - Livraria Infantil">
     <meta property="og:description" content="Descubra livros que enchem o coração de amor, felicidade e alegria">
-    <meta property="og:image" content="https://lovehibo.com/logos/PINGUINO LOVE HIBO.jpg">
-    <meta property="og:url" content="https://lovehibo.com/portugues.html">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Love Hibo - Livraria Infantil">
-    <meta name="twitter:description" content="Descubra livros que enchem o coração de amor, felicidade e alegria">
-    <meta name="twitter:image" content="https://lovehibo.com/logos/PINGUINO LOVE HIBO.jpg">
-    <meta name="twitter:site" content="@lovehibo">
-    <meta name="twitter:creator" content="@lovehibo">    <link rel="canonical" href="https://lovehibo.com/portugues.html">
+    <meta property="og:image" content="/logos/PINGUINO LOVE HIBO.jpg">
+    <meta property="og:url" content="https://lovehibo.com">    <link rel="canonical" href="https://lovehibo.com/portugues.html">
     
     <!-- Hreflang tags for multilingual SEO -->
     <link rel="alternate" hreflang="en" href="https://lovehibo.com/index.html">
@@ -54,14 +45,12 @@
     <link rel="preload" href="libros_portugues/3.jpg" as="image">
 <link rel="preload" href="css/style.min.css" as="style">
     
-    <!-- Preconnect para recursos externos -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    
     <!-- Folhas de estilo -->
-    <link rel="stylesheet" href="css/style.min.css?v=2.0">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
     
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,7 +58,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Bungee&family=Lilita+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
     
     <!-- Script com atributo defer para melhor desempenho -->
-    <script src="css/script.min.js" defer></script>    
+    <script src="css/main.js" defer></script>    
     <!-- JSON-LD Structured Data para SEO -->
     <script type="application/ld+json">
     {
@@ -149,16 +138,18 @@
 
 <main class="main-content" id="main-content" role="main">
     <section class="library-section" aria-label="Coleção de livros">
-        <div class="library-header">
-            <h2 class="page-title w3-jumbo">BIBLIOTECA ONLINE</h2>
-            <p class="book-count"><i class="fas fa-book"></i> <span id="bookCount">9</span> livros disponíveis</p>
-        </div>
+        <h2 class="page-title w3-jumbo">BIBLIOTECA ONLINE</h2>
         
+        <!-- Encabezado de biblioteca con contador -->
+        <div class="library-header">
+            <h3>Nossa coleção: <span id="bookCount">9</span> livros disponíveis</h3>
+        </div>
+
         <!-- Filtros de búsqueda -->
-        <div class="search-filters" role="search" aria-label="Pesquisa e filtros de livros">
+        <div class="search-filters">
             <div class="search-box">
-                <i class="fas fa-search" aria-hidden="true"></i>
-                <input type="search" id="searchInput" placeholder="Pesquisar livros por título..." aria-label="Pesquisar livros por título">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Pesquisar livros por título..." aria-label="Pesquisar livros por título">
             </div>
             <div class="filter-group">
                 <label for="ageFilter">Idade:</label>
@@ -360,13 +351,8 @@
     <p>
         L<span class="header-heart">❤</span>VE HIBO - Descubra o livro que fará seu coração sorrir e escolha o que mais te abraça
         <span class="header-heart">❤</span> &copy; 2025
-    </p>    <div style="margin:1rem 0;">
-        <a href="privacy.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Privacidade</a> |
-        <a href="terms.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Termos</a> |
-        <a href="cookies.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Cookies</a> |
-        <a href="legal.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Legal</a> |
-        <a href="contact.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Contato</a>
-    </div>    <div>
+    </p>
+    <div>
         <a href="https://facebook.com" aria-label="Facebook" style="color:#fff;margin:0 8px;"><i class="fab fa-facebook"></i></a>
         <a href="https://instagram.com" aria-label="Instagram" style="color:#fff;margin:0 8px;"><i class="fab fa-instagram"></i></a>
         <a href="mailto:contacto@lovehibo.com" aria-label="Email" style="color:#fff;margin:0 8px;"><i class="fas fa-envelope"></i></a>

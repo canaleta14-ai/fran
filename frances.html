@@ -16,19 +16,8 @@
     <!-- Open Graph pour les réseaux sociaux -->
     <meta property="og:title" content="Love Hibo - Librairie pour enfants">
     <meta property="og:description" content="Découvrez des livres qui remplissent le cœur d'amour, de bonheur et de joie">
-    <meta property="og:image" content="https://lovehibo.com/logos/PINGUINO LOVE HIBO.jpg">
-    <meta property="og:url" content="https://lovehibo.com/frances.html">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Love Hibo - Librairie pour enfants">
-    <meta name="twitter:description" content="Découvrez des livres qui remplissent le cœur d'amour, de bonheur et de joie">
-    <meta name="twitter:image" content="https://lovehibo.com/logos/PINGUINO LOVE HIBO.jpg">
-    <meta name="twitter:site" content="@lovehibo">
-    <meta name="twitter:creator" content="@lovehibo">
-    
-    <link rel="canonical" href="https://lovehibo.com/frances.html">
+    <meta property="og:image" content="/logos/PINGUINO LOVE HIBO.jpg">
+    <meta property="og:url" content="https://lovehibo.com">    <link rel="canonical" href="https://lovehibo.com/frances.html">
     
     <!-- Hreflang tags for multilingual SEO -->
     <link rel="alternate" hreflang="en" href="https://lovehibo.com/index.html">
@@ -51,19 +40,17 @@
     
     <!-- Préchargement des ressources critiques -->
     <link rel="preload" href="/css/w3.css" as="style">
-    <link rel="preload" href="css/style.min.css" as="style">
-    <link rel="preload" href="libros_frances/1.jpg" as="image">
+        <link rel="preload" href="libros_frances/1.jpg" as="image">
     <link rel="preload" href="libros_frances/2.jpg" as="image">
     <link rel="preload" href="libros_frances/3.jpg" as="image">
-    
-    <!-- Preconnect para recursos externos -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preload" href="css/style.min.css" as="style">
     
     <!-- Feuilles de style -->
-    <link rel="stylesheet" href="css/style.min.css?v=2.0">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
     
     <!-- Polices -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +58,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Bungee&family=Lilita+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
     
     <!-- Script avec l’attribut defer pour de meilleures performances -->
-    <script src="css/script.min.js" defer></script>    
+    <script src="css/main.js" defer></script>    
     <!-- JSON-LD Structured Data para SEO -->
     <script type="application/ld+json">
     {
@@ -106,8 +93,7 @@
 </head>
 
 <body class="site-body">
-<a href="#main-content" class="skip-link">Aller au contenu principal</a>
-<header class="main-header" role="banner">
+<header class="main-header">
     <h1 class="w3-wider w3-jumbo">L<span class="header-heart">❤</span>VE <span class="hibo w3-jumbo">HIBO</span></h1>
     <p class="header-tagline">
         Découvrez des livres qui remplissent votre <span class="header-heart">❤</span> d'amour, de bonheur et de joie
@@ -118,10 +104,10 @@
         <div class="dropdown">
             <button class="dropdown-btn idioma" aria-label="Sélectionner la langue" aria-haspopup="true" aria-expanded="false">Langue</button>
             <div class="dropdown-content">
-                <a href="frances.html" class="dropdown-item active" aria-current="page">Français</a>
+                <a href="espanol.html" class="dropdown-item">Espagnol</a>
                 <a href="index.html" class="dropdown-item">Anglais (USA)</a>
                 <a href="english.html" class="dropdown-item">Anglais (UK)</a>
-                <a href="espanol.html" class="dropdown-item">Espagnol</a>
+                <a href="frances.html" class="dropdown-item active" aria-current="page">Français</a>
                 <a href="aleman.html" class="dropdown-item">Allemand</a>
                 <a href="italiano.html" class="dropdown-item">Italien</a>
                 <a href="portugues.html" class="dropdown-item">Portugais</a>
@@ -133,13 +119,29 @@
             <button class="dropdown-btn categoria" aria-label="Filtrer par catégorie" aria-haspopup="true" aria-expanded="false">Catégories</button>
             <div class="dropdown-content">
                 <a href="#" class="dropdown-item" data-category="all">Tous les livres</a>
-                <a href="#" class="dropdown-item" data-category="coloring">Livres de coloriage</a>
-                <a href="#" class="dropdown-item" data-category="stories">Contes pour enfants</a>
+                <a href="#" class="dropdown-item" data-category="coloring">Livres à colorier</a>
+                <a href="#" class="dropdown-item" data-category="stories">Histoires pour enfants</a>
                 <a href="#" class="dropdown-item" data-category="witches">Série Sorcières Volantes</a>
                 <a href="#" class="dropdown-item" data-category="animals">Animaux Mignons</a>
                 <a href="#" class="dropdown-item" data-category="fantasy">Fantaisie et Magie</a>
             </div>
         </div>
+        <!-- <div class="dropdown">
+            <button class="dropdown-btn categoria">OLD</button>
+            <div class="dropdown-content">
+                <a href="#" class="dropdown-item" aria-label="Voir le livre sur Amazon">Livres de coloriage</a>
+                <a href="#" class="dropdown-item">Contes pour enfants</a>
+                <a href="#" class="dropdown-item">Cahiers</a>
+                <a href="#" class="dropdown-item">Sorcières</a>
+                <a href="#" class="dropdown-item">Halloween</a>
+                <a href="#" class="dropdown-item">Agendas</a>
+                <a href="#" class="dropdown-item">Développement personnel</a>
+                <a href="#" class="dropdown-item">Séries</a>
+                <a href="#" class="dropdown-item">Journal de gratitude</a>
+                <a href="#" class="dropdown-item">Journaux intimes</a>
+                <a href="#" class="dropdown-item">Éducatifs</a>
+            </div>
+        </div> -->
     </div>
 </div>
 
@@ -152,16 +154,18 @@
 
 <main class="main-content" id="main-content" role="main">
     <section class="library-section" aria-label="Collection de livres">
-        <div class="library-header">
-            <h2 class="page-title w3-jumbo">BIBLIOTHÈQUE EN LIGNE</h2>
-            <p class="book-count"><i class="fas fa-book"></i> <span id="bookCount">10</span> livres disponibles</p>
-        </div>
+        <h2 class="page-title w3-jumbo">BIBLIOTHÈQUE EN LIGNE</h2>
         
-        <!-- Recherche et Filtres -->
-        <div class="search-filters" role="search" aria-label="Recherche et filtres de livres">
+        <!-- Encabezado de biblioteca con contador -->
+        <div class="library-header">
+            <h3>Notre collection: <span id="bookCount">10</span> livres disponibles</h3>
+        </div>
+
+        <!-- Filtros de búsqueda -->
+        <div class="search-filters">
             <div class="search-box">
-                <i class="fas fa-search" aria-hidden="true"></i>
-                <input type="search" id="searchInput" placeholder="Rechercher des livres par titre..." aria-label="Rechercher des livres par titre">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Rechercher des livres par titre..." aria-label="Rechercher des livres par titre">
             </div>
             <div class="filter-group">
                 <label for="ageFilter">Âge:</label>
@@ -182,9 +186,17 @@
                 </select>
             </div>
         </div>
-        <div class="book-grid" role="list" aria-label="Livres disponibles">
+
+        <div class="book-grid">
             <!-- Livre 1 -->
             <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="petit ourson beary">
+                <div class="book-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
                 <img src="libros_frances/1.jpg" alt="Petit ourson Love Hibo Beary" class="book-image" loading="lazy">
                 <p class="w3-center">Auteur: L<span class="header-heart">❤</span>VE HIBO</p>
                 <p>Broché – Grands caractères</p>
@@ -195,6 +207,13 @@
 
             <!-- Livre 2 -->
             <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="oursonne bibi">
+                <div class="book-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
                 <img src="libros_frances/2.jpg" alt="Oursonne mignonne Love Hibo Bibi" class="book-image" loading="lazy">
                 <p class="w3-center">Auteur: L<span class="header-heart">❤</span>VE HIBO</p>
                 <p>Broché – Grands caractères</p>
@@ -203,9 +222,23 @@
                     Voir sur Amazon FR</a>
             </div>
 
-            <!-- Livre 3 -->
-            <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="chaton catty">
-                <img src="libros_frances/3.jpg" alt="Chaton mignon Love Hibo Catty" class="book-image" loading="lazy">
+            <!-- Livre 10 -->
+            <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="chaton kawaii kitty">
+                <div class="book-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <img src="libros_frances/10.jpg" alt="Chaton kawaii Love Hibo Kitty" class="book-image" loading="lazy">
+                <p class="w3-center">Auteur: L<span class="header-heart">❤</span>VE HIBO</p>
+                <p>Broché – Grands caractères</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <img src="libros_frances/3.jpg" alt="Chaton Kawaii Love Hibo Catty" class="book-image" loading="lazy">
                 <p class="w3-center">Auteur: L<span class="header-heart">❤</span>VE HIBO</p>
                 <p>Broché – Grands caractères</p>
                 <a aria-label="Voir ce livre sur Amazon" href="https://www.amazon.fr/dp/B0F4D2NQV2" class="buy-button" target="_blank" rel="noopener">
@@ -215,6 +248,13 @@
 
             <!-- Livre 4 -->
             <div class="book-card" data-category="coloring fantasy animals" data-age="3-5" data-format="paperback" data-title="licorne uny">
+                <div class="book-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
                 <img src="libros_frances/4.jpg" alt="Licorne Love Hibo Uny" class="book-image" loading="lazy">
                 <p class="w3-center">Auteur: L<span class="header-heart">❤</span>VE HIBO</p>
                 <p>Broché – Grands caractères</p>
@@ -223,9 +263,23 @@
                     Voir sur Amazon FR</a>
             </div>
 
-            <!-- Livre 5 -->
-            <div class="book-card" data-category="coloring fantasy animals" data-age="3-5" data-format="paperback" data-title="dragon draggy">
-                <img src="libros_frances/5.jpg" alt="Dragon mignon Love Hibo Draggy" class="book-image" loading="lazy">
+            <!-- Livre 6 -->
+            <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="chiot mignon doggy">
+                <div class="book-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <img src="libros_frances/6.jpg" alt="Chiot mignon Love Hibo Doggy" class="book-image" loading="lazy">
+                <p class="w3-center">Auteur: L<span class="header-heart">❤</span>VE HIBO</p>
+                <p>Broché – Grands caractères</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <img src="libros_frances/5.jpg" alt="Dragon doux Love Hibo Draggy" class="book-image" loading="lazy">
                 <p class="w3-center">Auteur: L<span class="header-heart">❤</span>VE HIBO</p>
                 <p>Broché – Grands caractères</p>
                 <a aria-label="Voir ce livre sur Amazon" href="https://www.amazon.fr/dp/B0F3P1M4DR" class="buy-button" target="_blank" rel="noopener">
@@ -233,9 +287,16 @@
                     Voir sur Amazon FR</a>
             </div>
 
-            <!-- Livre 6 -->
-            <div class="book-card" data-category="coloring animals" data-age="4-8" data-format="paperback" data-title="lapin bunny">
-                <img src="libros_frances/6.jpg" alt="Lapin de Pâques Love Hibo Bunny" class="book-image" loading="lazy">
+            <!-- Livre 7 -->
+            <div class="book-card" data-category="coloring animals" data-age="4-8" data-format="paperback" data-title="lapin pâques bunny">
+                <div class="book-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <img src="libros_frances/7.jpg" alt="Lapin de Pâques Love Hibo Bunny" class="book-image" loading="lazy">
                 <p class="w3-center">Auteur: L<span class="header-heart">❤</span>VE HIBO</p>
                 <p>Broché – Grands caractères</p>
                 <a aria-label="Voir ce livre sur Amazon" href="https://www.amazon.fr/dp/B0F318T99M" class="buy-button" target="_blank" rel="noopener">
@@ -244,7 +305,7 @@
             </div>
 
             <!-- Livre 7 -->
-            <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="chiot doggy">
+            <div class="book-card">
                 <img src="libros_frances/7.jpg" alt="Chiot Love Hibo Doggy" class="book-image" loading="lazy">
                 <p class="w3-center">Auteur: L<span class="header-heart">❤</span>VE HIBO</p>
                 <p>Broché – Grands caractères</p>
@@ -254,7 +315,7 @@
             </div>
 
             <!-- Livre 8 -->
-            <div class="book-card" data-category="coloring animals" data-age="4-8" data-format="paperback" data-title="lapin bunny">
+            <div class="book-card">
                 <img src="libros_frances/8.jpg" alt="Lapin de Pâques Love Hibo Bunny (Taille 2)" class="book-image" loading="lazy">
                 <p class="w3-center">Auteur: L<span class="header-heart">❤</span>VE HIBO</p>
                 <p>Broché – Grands caractères</p>
@@ -264,8 +325,22 @@
             </div>
 
             <!-- Livre 9 -->
-            <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="pingouin fille">
-                <img src="libros_frances/9.jpg" alt="Petite pingouine pour filles" class="book-image" loading="lazy">
+            <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="mignon petit pingouin garçons">
+                <div class="book-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <img src="libros_frances/9.jpg" alt="Mignon Petit Pingouin pour Garçons" class="book-image" loading="lazy">
+                <p class="w3-center">Auteur: L<span class="header-heart">❤</span>VE HIBO</p>
+                <p>Broché – Grands caractères</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <img src="libros_frances/8.jpg" alt="Mignonne Petite Pingouin pour Filles" class="book-image" loading="lazy">
                 <p class="w3-center">Auteur: L<span class="header-heart">❤</span>VE HIBO</p>
                 <p>Broché – Grands caractères</p>
                 <a aria-label="Voir ce livre sur Amazon" href="https://www.amazon.fr/dp/B0F6S77CGW" class="buy-button" target="_blank" rel="noopener">
@@ -274,7 +349,7 @@
             </div>
 
             <!-- Livre 10 -->
-            <div class="book-card" data-category="coloring animals" data-age="3-5" data-format="paperback" data-title="pingouin garçon">
+            <div class="book-card">
                 <img src="libros_frances/10.jpg" alt="Pingouin mignon pour garçons" class="book-image" loading="lazy">
                 <p class="w3-center">Auteur: L<span class="header-heart">❤</span>VE HIBO</p>
                 <p>Broché – Grands caractères</p>
@@ -285,12 +360,12 @@
         </div>
     </section>
 
-    <!-- Section Newsletter -->
+    <!-- Newsletter Section -->
     <section class="newsletter-section" aria-label="Inscription à la newsletter">
         <div class="newsletter-container">
-            <h2><i class="fas fa-envelope"></i> Restez Connecté avec Love Hibo</h2>
+            <h2><i class="fas fa-envelope"></i> Restez connecté avec Love Hibo</h2>
             <p>Recevez des mises à jour sur les nouveaux livres, des offres exclusives et plus encore!</p>
-            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)" aria-label="Formulaire de newsletter">
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)" aria-label="Formulaire d'inscription">
                 <input type="email" id="newsletterEmail" placeholder="Votre adresse e-mail" required aria-label="Adresse e-mail pour la newsletter">
                 <button type="submit"><i class="fas fa-paper-plane"></i> S'abonner</button>
             </form>
@@ -309,13 +384,8 @@
     <p>
         L<span class="header-heart">❤</span>VE HIBO - Découvrez le livre qui fera sourire votre cœur et choisissez celui qui vous embrasse le plus
         <span class="header-heart">❤</span> &copy; 2025
-    </p>    <div style="margin:1rem 0;">
-        <a href="privacy.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Confidentialité</a> |
-        <a href="terms.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Conditions</a> |
-        <a href="cookies.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Cookies</a> |
-        <a href="legal.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Mentions légales</a> |
-        <a href="contact.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Contact</a>
-    </div>    <div>
+    </p>
+    <div>
         <a href="https://facebook.com" aria-label="Facebook" style="color:#fff;margin:0 8px;"><i class="fab fa-facebook"></i></a>
         <a href="https://instagram.com" aria-label="Instagram" style="color:#fff;margin:0 8px;"><i class="fab fa-instagram"></i></a>
         <a href="mailto:contacto@lovehibo.com" aria-label="Email" style="color:#fff;margin:0 8px;"><i class="fas fa-envelope"></i></a>

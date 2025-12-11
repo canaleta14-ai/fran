@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lovehibo-v2';
+const CACHE_NAME = 'lovehibo-v3';
 const urlsToCache = [
   '/',
   '/index.html',

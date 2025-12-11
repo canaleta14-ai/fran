@@ -16,17 +16,8 @@
     <!-- Open Graph for social media -->
     <meta property="og:title" content="Love Hibo - Children's Bookstore">
     <meta property="og:description" content="Discover books that fill the heart with love, happiness and joy">
-    <meta property="og:image" content="https://lovehibo.com/logos/PINGUINO LOVE HIBO.jpg">
-    <meta property="og:url" content="https://lovehibo.com/english.html">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Love Hibo - Children's Bookstore">
-    <meta name="twitter:description" content="Discover books that fill the heart with love, happiness and joy">
-    <meta name="twitter:image" content="https://lovehibo.com/logos/PINGUINO LOVE HIBO.jpg">
-    <meta name="twitter:site" content="@lovehibo">
-    <meta name="twitter:creator" content="@lovehibo">
+    <meta property="og:image" content="/logos/PINGUINO LOVE HIBO.jpg">
+    <meta property="og:url" content="https://lovehibo.com">
     
     <!-- Favicons -->
     <link rel="icon" type="image/jpeg" href="logos/PINGUINO LOVE HIBO.jpg" />
@@ -61,22 +52,20 @@
     <link rel="preload" href="libros_ingles/3.jpg" as="image">
     <link rel="preload" href="libros_ingles/4.jpg" as="image">
     
-    <!-- Preconnect to external resources -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.min.css?v=2.0">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
     
-    <!-- Fonts with font-display swap -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Bungee&family=Lilita+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
     
     <!-- Script with defer attribute for better performance -->
-    <script src="css/script.min.js" defer></script>
+    <script src="css/main.js" defer></script>
     
     <!-- Service Worker Registration -->
     <script>
@@ -173,18 +162,18 @@
     <section class="library-section" aria-label="Book collection">
         <div class="library-header">
             <h2 class="page-title w3-jumbo">ONLINE LIBRARY</h2>
-            <p class="book-count"><i class="fas fa-book"></i> <span id="bookCount">20</span> books available</p>
+            <p class="book-count"><i class="fas fa-book"></i> <span id="bookCount">19</span> books available</p>
         </div>
         
         <!-- Search and Filters -->
-        <div class="search-filters" role="search" aria-label="Book search and filters">
+        <div class="search-filters">
             <div class="search-box">
-                <i class="fas fa-search" aria-hidden="true"></i>
-                <input type="search" id="searchInput" placeholder="Search books by title..." aria-label="Search books by title">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search books by title..." aria-label="Search books">
             </div>
             <div class="filter-group">
                 <label for="ageFilter">Age:</label>
-                <select id="ageFilter" aria-label="Filter books by age range">
+                <select id="ageFilter" aria-label="Filter by age">
                     <option value="all">All Ages</option>
                     <option value="3-5">3-5 years</option>
                     <option value="4-8">4-8 years</option>
@@ -193,7 +182,7 @@
             </div>
             <div class="filter-group">
                 <label for="formatFilter">Format:</label>
-                <select id="formatFilter" aria-label="Filter books by format">
+                <select id="formatFilter" aria-label="Filter by format">
                     <option value="all">All Formats</option>
                     <option value="kindle">Kindle</option>
                     <option value="paperback">Paperback</option>
@@ -201,7 +190,7 @@
                 </select>
             </div>
         </div>
-        <div class="book-grid" role="list" aria-label="Available books">
+        <div class="book-grid">
             <!-- Book 1 -->
             <div class="book-card" data-category="witches stories" data-age="4-8" data-format="kindle" data-title="flying witches for girls">
                 <img src="libros_ingles/1.jpg" alt="FLYING WITCHES FOR GIRLS" class="book-image" loading="lazy">
@@ -394,60 +383,35 @@
                     <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                     View on Amazon</a>
             </div>
-
-            <!-- Book 20 -->
-            <div class="book-card" data-category="stories romance" data-age="8-12" data-format="kindle" data-title="love lost snow">
-                <div class="book-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <img src="libros_ingles/20.jpg" alt="A Love Lost in the Snow" class="book-image" loading="lazy">
-                <p class="w3-center">Author: L<span class="header-heart">❤</span>VE HIBO</p>
-                <p>Kindle Edition</p>
-                <a aria-label="View this book on Amazon" href="https://www.amazon.co.uk/dp/B0FSLRMX6J" class="buy-button" target="_blank" rel="noopener">
-                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-                    View on Amazon</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section" aria-label="Newsletter subscription">
-        <div class="newsletter-container">
-            <h2><i class="fas fa-envelope"></i> Stay Connected with Love Hibo</h2>
-            <p>Receive updates on new books, exclusive offers and more!</p>
-            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)" aria-label="Newsletter form">
-                <input type="email" id="newsletterEmail" placeholder="Your email address" required aria-label="Email address for newsletter">
-                <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
-            </form>
-            <div id="newsletterMessage" class="newsletter-message" role="alert" aria-live="polite"></div>
-            <div class="social-links">
-                <p>Follow us:</p>
-                <a href="#" aria-label="Love Hibo on Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="#" aria-label="Love Hibo on Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="Love Hibo on Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="Love Hibo on Pinterest"><i class="fab fa-pinterest"></i></a>
-            </div>
         </div>
     </section>
 </main>
-<footer class="site-footer w3-padding-16 w3-center" role="contentinfo">
-    <p>
-        L<span class="header-heart">❤</span>VE HIBO - Discover the book that will make your heart smile and choose the one that embraces you the most
-        <span class="header-heart">❤</span> &copy; 2025
-    </p>    <div style="margin:1rem 0;">
-        <a href="privacy.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Privacy</a> |
-        <a href="terms.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Terms</a> |
-        <a href="cookies.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Cookies</a> |
-        <a href="legal.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Legal</a> |
-        <a href="contact.html" style="color:#fff;margin:0 0.5rem;text-decoration:none;">Contact</a>
-    </div>    <div>
-        <a href="https://facebook.com" aria-label="Facebook" style="color:#fff;margin:0 8px;"><i class="fab fa-facebook"></i></a>
-        <a href="https://instagram.com" aria-label="Instagram" style="color:#fff;margin:0 8px;"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:contacto@lovehibo.com" aria-label="Email" style="color:#fff;margin:0 8px;"><i class="fas fa-envelope"></i></a>
+<footer class="site-footer w3-padding-16" role="contentinfo">
+    <!-- Newsletter Section -->
+    <div class="newsletter-section">
+        <h3><i class="fas fa-heart"></i> Stay Connected with Love Hibo</h3>
+        <p>Subscribe to receive updates on new books and special offers!</p>
+        <form class="newsletter-form" onsubmit="return subscribeNewsletter(event)">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required aria-label="Email for newsletter">
+            <button type="submit" aria-label="Subscribe to newsletter">
+                <i class="fas fa-paper-plane"></i> Subscribe
+            </button>
+        </form>
+        <p class="newsletter-message" id="newsletterMessage"></p>
+    </div>
+    
+    <div class="footer-divider"></div>
+    
+    <div class="footer-content">
+        <p>
+            L<span class="header-heart">❤</span>VE HIBO - Discover the book that will make your heart smile and choose the one that embraces you the most
+            <span class="header-heart">❤</span> &copy; 2025
+        </p>
+        <div class="social-links">
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:contacto@lovehibo.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
     </div>
 </footer>
 <button id="scrollTopBtn" class="scroll-top" onclick="scrollToTop()" aria-label="Go to top">
