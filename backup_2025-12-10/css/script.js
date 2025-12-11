@@ -1,0 +1,7 @@
+   // Botón scroll arriba
+        window.addEventListener('scroll', function() {
+            document.getElementById('scrollTopBtn').style.display = window.scrollY > 200 ? 'block' : 'none';
+        });
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
