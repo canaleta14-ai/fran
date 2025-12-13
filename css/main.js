@@ -96,17 +96,25 @@ function subscribeNewsletter(event){
     if(!cookieConsent){
         const banner=document.createElement('div');
         banner.id='cookie-consent-banner';
-        banner.innerHTML='<div class="cookie-content"><p><i class="fas fa-cookie-bite"></i> <strong>Cookies Notice</strong></p><div class="cookie-buttons"><button onclick="acceptCookies()">Accept</button><button onclick="declineCookies()">Decline</button></div></div>';
+        banner.innerHTML='<div class="cookie-content"><p><i class="fas fa-cookie-bite"></i> <strong>We value your privacy</strong></p><p>We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p><div class="cookie-buttons"><button onclick="acceptCookies()" class="accept-btn">Accept All</button><button onclick="declineCookies()" class="decline-btn">Decline</button></div></div>';
         document.body.appendChild(banner);
     }
 })();
 
 window.acceptCookies=function(){
     localStorage.setItem('lovehibo_cookie_consent','accepted');
-    document.getElementById('cookie-consent-banner').style.display='none';
+    const banner=document.getElementById('cookie-consent-banner');
+    if(banner){
+        banner.style.opacity='0';
+        setTimeout(()=>banner.remove(),300);
+    }
 };
 
 window.declineCookies=function(){
     localStorage.setItem('lovehibo_cookie_consent','declined');
-    document.getElementById('cookie-consent-banner').style.display='none';
+    const banner=document.getElementById('cookie-consent-banner');
+    if(banner){
+        banner.style.opacity='0';
+        setTimeout(()=>banner.remove(),300);
+    }
 };
