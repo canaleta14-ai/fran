@@ -222,8 +222,8 @@ body {
     padding: 1rem;
     text-align: center;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; */
-     background: #fff; border-radius: 16px; box-shadow: 0 2px 12px #eee; padding: 1rem; transition: transform .2s; 
+    transition: transform: 0.3s ease; */
+     background: #fff; border-radius: 16px; box-shadow: 0 2px 12px #eee; padding: 1rem; transition: transform .2s; position: relative; 
 }
 
 .book-card:hover {
@@ -245,6 +245,8 @@ body {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    pointer-events: none;
+    cursor: default;
 }
 
 .book-title {
@@ -264,6 +266,10 @@ body {
     font-size: 0.9rem;
     margin-top: 0.5rem;
     transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+    cursor: pointer;
 }
 
 .buy-button:hover {
