@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded',function(){
         }
     }
     
-    document.querySelectorAll('[data-category]').forEach(link=>{
+    // Solo aplicar el filtro a elementos de navegación/menú, NO a book-cards
+    document.querySelectorAll('[data-category]:not(.book-card)').forEach(link=>{
         link.addEventListener('click',function(e){
             e.preventDefault();
             e.stopPropagation();
